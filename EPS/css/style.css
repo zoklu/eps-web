@@ -1,0 +1,356 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+}
+
+header, nav{
+    width: 100%;
+}
+
+header {
+    background-color: #2F5E2A;
+    display: flex;
+    align-items: center;
+}
+
+header .logo, header .search-bar {
+    flex: 1;
+    text-align: center;
+}
+
+header .logo img {
+    width: 10rem;
+    padding: 1rem 0;
+}
+
+header .search-bar input[type=search], header .search-bar input[type=submit] {
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    border: none;
+}
+
+header .search-bar input[type=submit] {
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    background-color: #829980;
+    color: #fff;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+nav ul {
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    background-color: #437A3D;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 2rem 4rem;
+    border-radius: 4px;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+nav ul li:hover {
+    background-color: #829980;
+    transition: .2s background-color;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    text-shadow: 4px 4px 5px rgba(150, 150, 150, 0.5);
+}
+
+.active {
+    background-color: #91c9bc;
+}
+
+section#besorolasok .card-container {
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    margin-bottom: 5rem;
+}
+
+section#besorolasok .card-container .card {
+    gap: 1rem;
+    flex: 20%;
+    text-align: center;
+}
+
+section#besorolasok .card-container .card img {
+    width: 20rem;
+    padding: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+}
+
+section#besorolasok .card-container .card img:hover {
+    border-color: #000;
+}
+
+section#besorolasok .card-container .card img.active-pic {
+    border-color: #000;
+}
+
+section#besorolasok .card-container .card .desc {
+    font-size: 2rem;
+    text-align: left;
+    margin-top: 5rem;
+    padding: 0 2rem;
+    line-height: 1.5;
+}
+
+section#mukodese .flex-container {
+    display: flex;
+}
+
+section#mukodese .bekezdes {
+    font-size: 2rem;
+    padding: 0 20%;
+    line-height: 2;
+}
+
+section#mukodese .flex-container .flex-item {
+    flex: 1;
+    text-align: center;
+}
+
+section#mukodese .flex-container .flex-item img {
+    width: 50rem;
+    padding: 5rem 0;
+}
+
+section#mukodese .flex-container .flex-item span {
+    display: inline-block;
+    width: 100%;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #2F5E2A;
+    color: #fff;
+}
+
+footer .social {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+}
+
+footer .social ul {
+    list-style: none;
+}
+
+footer .social ul li{
+    display: inline-block;
+    padding: 2rem;
+    font-size: 3rem;
+}
+
+footer .social ul li a:hover{
+    color: #829980;
+}
+
+.lang {
+    color: #fff;
+    margin-right: 1rem;
+}
+
+.lang form select {
+    padding: 1rem;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 4px;
+}
+
+section {
+    position: relative;
+    padding-bottom: 5rem;
+    text-shadow: 4px 4px 5px rgba(150, 150, 150, 0.5);
+}
+
+.arrow-container {
+    font-size: 3rem;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.arrow-container .arrow {
+    width: 5rem;
+    aspect-ratio: 1/1;
+    background-color: #2F5E2A;
+    text-align: center;
+    line-height: 5rem;
+    border-radius: 4px;
+    margin: 0 1rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.bemutatkozas-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.bemutatkozas-container .bemutatkozas-item {
+    text-align: center;
+}
+
+.bemutatkozas-container .bemutatkozas-item img {
+    width: 75%;
+    border-radius: 4px;
+}
+
+.bemutatkozas-container .szoveg {
+    font-size: 2rem;
+    line-height: 2;
+    text-align: justify;
+    padding: 0 5%;
+}
+
+section:nth-child(odd) {
+    background-color: #fff;
+}
+
+section:nth-child(even) {
+    background-color: #f5faf6;
+}
+
+video {
+    width: 50%;
+    margin-top: 5rem;
+}
+
+.description {
+    width: 50%;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+    margin: 0 auto;
+}
+
+.szlogen {
+    color: #fff;
+    font-size: 3rem;
+    font-style: italic;
+}
+
+.merleg-container {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.merleg-container .merleg-item {
+    text-align: center;
+    flex: 2;
+    font-size: 2rem;
+    line-height: 1.5;
+    margin-top: 5rem;
+}
+
+.merleg-container .merleg-item#merleg-item-desc  {
+    flex: 1;
+}
+
+.merleg-container .merleg-item#merleg-item-desc img  {
+    margin-top: 5rem;
+}
+
+.merleg-container .merleg-item img {
+    width: 50%;
+}
+
+.gomb {
+    padding: 1rem 2rem;
+    background-color: #2F5E2A;
+    display: block;
+    text-align: center;
+    border-radius: 4px;
+    margin-top: 5rem;
+}
+
+.gomb:hover {
+    background-color: #829980;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    section#besorolasok .card-container {
+        width: 50rem;
+        background: #017f71;
+        display: flex;
+        overflow-x: scroll;
+        margin: 0 auto;
+        scroll-snap-type: x mandatory;
+    }
+    
+    section#besorolasok .card-container::-webkit-scrollbar {
+        width: 0;
+    }
+    
+    section#besorolasok .card-container .card {
+        min-width: 50rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 10rem;
+        color: #fff;
+        scroll-snap-align: center;
+    }
+    
+    section#besorolasok .card-container .card img {
+        width: 50rem;
+    }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}

@@ -1,0 +1,228 @@
+:root {
+    /* FONT */
+    --default-font-size: 10px;
+    --huge-font: 4rem;
+    --large-font: 3rem;
+    --medium-font: 2rem;
+    --normal-font: 1rem;
+    --small-font: .75rem;
+    /* MARGIN AND PADDING */
+    --large-space: 3rem;
+    --medium-space: 2rem;
+    --normal-space: 1rem;
+    --small-space: .75rem;
+
+    --color-1: #18286b;
+    --color-2: #21368b;
+    --color-3: #017f71;
+    --color-4: #169385;
+    --color-5: #91c9bb;
+    --color-6: #e5e5e5;
+    --color-7: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 0px 8px 10px rgba(0,0,0,0.7);
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-7);
+}
+
+section {
+    height: 100vh;
+}
+
+section:nth-child(even){
+    background-color: var(--color-4);
+}
+
+section:nth-child(odd){
+    background-color: var(--color-4);
+}
+
+section#intro .bg{
+    position: relative;
+    background-image: url("/img/background.jpg");
+    background-position: center;
+    background-size: cover;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    width: 100%;
+    height: 100%;
+}
+
+section#intro h3 {
+    color: var(--color-7);
+    text-align: center;
+    margin-bottom: var(--large-space);
+    letter-spacing: 3px;
+    font-size: 1.5rem;
+}
+
+section h2 {
+    color: var(--color-7);
+    text-align: center;
+    padding-top: var(--large-space);
+    font-size: var(--medium-font);
+}
+
+nav h1 {
+    font-size: var(--huge-font);
+    text-align: center;
+    color: var(--color-7);
+    margin-bottom: var(--medium-space);
+}
+
+nav {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 var(--medium-space);
+    font-size: var(--medium-font);
+    padding-bottom: 3px;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+    transition: border-color .25s;
+}
+
+nav ul li:first-child{
+    margin-left: 0;
+}
+
+nav ul li:hover {
+    border-color: var(--color-7);
+    transition: border-color .25s;
+}
+
+form {
+    width: 100%;
+    display: block;
+    color: var(--color-7);
+    font-family: 'Montserrat', sans-serif;
+}
+
+form input[type=text] {
+    border: 3px solid var(--color-3);
+    padding: .5rem 1rem;
+    width: 25%;
+    border-radius: 4px;
+    background-color: transparent;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--color-7);
+    margin: var(--medium-space) auto;
+}
+
+form input[type=text]::placeholder {
+    color: var(--color-7);
+}
+
+form input[type=text]:focus{
+    outline: transparent;
+}
+
+form input {
+    display: block;
+    margin: 0 auto;
+    font-size: var(--medium-font-size);
+}
+
+form input[type=submit] {
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    border: 3px solid var(--color-3);
+    cursor: pointer;
+    background-color: transparent;
+    color: var(--color-7);
+    font-family: 'Montserrat', sans-serif;
+    margin-top: var(--medium-space);
+}
+
+option::selection {background: #ccc;}
+option::-moz-selection {background: #ccc;}
+option::-webkit-selection {background: #ccc; color:#fff;}
+
+form input[type=submit]:hover{
+    background-color: var(--color-3);
+    transition: all .25s;
+}
+
+form input[type=checkbox]{
+    display: inline;
+    margin-bottom: 1rem;
+}
+
+section#for-companies h3{
+    margin: var(--medium-space) 0;
+    color: var(--color-7);
+}
+
+section#for-companies {
+    text-align: center;
+    position: relative;
+    background: linear-gradient(-45deg, var(--color-2), var(--color-3), var(--color-4));
+	background-size: 400% 400%;
+	animation: gradient 20s ease infinite;
+}
+
+form input[type=number] {
+    border: none;
+    padding: .5rem 1rem;
+    width: 25%;
+    background-color: transparent;
+    color: var(--color-7);
+    border: 3px solid var(--color-3);
+    border-radius: 4px;
+    margin: 1rem auto;
+}
+
+form input[type=number]:focus {
+    outline: none;
+}
+
+form input[type=number]::placeholder{
+    color: var(--color-7);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}   
